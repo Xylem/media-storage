@@ -1,0 +1,15 @@
+{
+    "name": "xylem/media-storage",
+    "description": "Media storage project",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Xylem",
+            "email": "xylem.pl@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.2.0",
+        "php-activerecord/php-activerecord": "dev-master"
+    }
+}
