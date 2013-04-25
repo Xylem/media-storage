@@ -1,6 +1,7 @@
 <?php
 
-function autoloader ($className) {
+function autoloader($className)
+{
     include(__DIR__ . "/" . $className . ".php");
 }
 

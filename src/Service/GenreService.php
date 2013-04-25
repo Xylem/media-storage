@@ -2,6 +2,7 @@
 
 namespace Service;
 
-class GenreService extends Service {
+class GenreService extends Service
+{
 
 }
