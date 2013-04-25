@@ -39,12 +39,14 @@
 
     <get src="http://getcomposer.org/installer" dest="${basedir}/build/composer.php" />
 
-    <target name="composer" description="Installs dependencies">
+    <target name="download-composer" description="Download Composer">
         <exec executable="php" failonerror="true">
             <arg value="-l" />
             <arg value="${basedir}/build/composer.php" />
         </exec>
+    </target>
 
+    <target name="composer" description="Install Composer dependencies">
         <exec executable="php" failonerror="true">
             <arg value="composer.phar" />
             <arg value="install" />
