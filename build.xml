@@ -37,7 +37,7 @@
         <mkdir dir="${basedir}/build/phpdox"/>
     </target>
 
-    <get src="https://getcomposer.org/installer" dest="${basedir}/build/composer.php" />
+    <get src="http://getcomposer.org/installer" dest="${basedir}/build/composer.php" />
 
     <target name="composer" description="Installs dependencies">
         <exec executable="php" failonerror="true">
