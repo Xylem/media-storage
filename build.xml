@@ -41,7 +41,6 @@
 
     <target name="download-composer" description="Download Composer">
         <exec executable="php" failonerror="true">
-            <arg value="-l" />
             <arg value="${basedir}/build/composer.php" />
         </exec>
     </target>
