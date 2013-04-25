@@ -37,6 +37,20 @@
         <mkdir dir="${basedir}/build/phpdox"/>
     </target>
 
+    <get src="https://getcomposer.org/installer" dest="${basedir}/build/composer.php" />
+
+    <target name="composer" description="Installs dependencies">
+        <exec executable="php" failonerror="true">
+            <arg value="-l" />
+            <arg value="${basedir}/build/composer.php" />
+        </exec>
+
+        <exec executable="php" failonerror="true">
+            <arg value="composer.phar" />
+            <arg value="install" />
+        </exec>
+    </target>
+
     <target name="lint" description="Perform syntax check of sourcecode files">
         <apply executable="php" failonerror="true">
             <arg value="-l"/>
